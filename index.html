@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A declassified campaign editorial investigating the highly unnecessary reveal behind All That Drama. Just Water.">
+  <title>All That Drama. Just Water. | Liquid Death</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header shell">
+    <a class="brand" href="#case" aria-label="Liquid Death, return to the case">LIQUID DEATH</a>
+    <nav aria-label="Primary navigation">
+      <a href="#case">The Case</a>
+      <a href="#reveal">The Reveal</a>
+      <a href="#story">The Story</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="case" aria-labelledby="hero-title">
+      <div class="hero__inner shell">
+        <div class="hero__copy">
+          <p class="eyebrow">CASE FILE 001 · DECLASSIFIED</p>
+          <h1 id="hero-title">ALL THAT DRAMA.<br><span>JUST WATER.</span></h1>
+          <p class="hero__dek">We secured the case. You investigate the contents.</p>
+        </div>
+
+        <div class="case-display" id="reveal" data-revealed="false">
+          <div class="case-image-frame" aria-live="polite">
+            <div class="image-fallback" data-fallback="assets/WHAT’S INSIDE.png">EXPECTED FILE: assets/WHAT’S INSIDE.png</div>
+            <img class="case-image case-image--closed" src="assets/WHAT’S INSIDE.png" alt="Closed silver briefcase from the campaign investigation">
+            <div class="image-fallback" data-fallback="assets/briefcase-open-can.png">EXPECTED FILE: assets/briefcase-open-can.png</div>
+            <img class="case-image case-image--open" src="assets/briefcase-open-can.png" alt="Open silver briefcase containing a can of Liquid Death mountain water">
+            <span class="glow" aria-hidden="true"></span>
+          </div>
+          <div class="case-controls">
+            <button class="button button--primary" id="case-toggle" type="button" aria-expanded="false" aria-controls="case-evidence">OPEN THE CASE</button>
+            <p class="sr-only" id="case-status" role="status">The case is closed.</p>
+          </div>
+          <div class="evidence" id="case-evidence" aria-hidden="true">
+            <p class="evidence__title">IT’S WATER.</p>
+            <dl class="evidence__list">
+              <div><dt>CONTENTS</dt><dd>Water.</dd></div>
+              <div><dt>SECURITY LEVEL</dt><dd>Completely unnecessary.</dd></div>
+              <div><dt>THREAT</dt><dd>Thirst.</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="hero__rule" aria-hidden="true"></div>
+    </section>
+
+    <article class="editorial" id="story" aria-labelledby="article-title">
+      <div class="editorial__topline shell">
+        <span>LD / FIELD REPORT</span><span>FILE 001 — 2026</span>
+      </div>
+      <div class="editorial__inner shell">
+        <div class="stamp" aria-label="Declassified">DECLASSIFIED</div>
+        <header class="article-header">
+          <p class="eyebrow eyebrow--dark">CAMPAIGN EDITORIAL</p>
+          <h2 id="article-title">We Opened the Case.<br>It Was Water.</h2>
+          <p class="byline">Campaign editorial · 2-minute read</p>
+          <figure class="article-image">
+            <div class="image-fallback">EXPECTED FILE: assets/briefcase-open-can.png</div>
+            <img src="assets/briefcase-open-can.png" alt="Open silver briefcase containing a can of Liquid Death mountain water">
+          </figure>
+        </header>
+        <div class="article-body">
+          <h3>The investigation</h3>
+          <p>A silver briefcase. Two locks. Enough smoke to make an ordinary room look suspicious. Whatever was inside, someone clearly wanted us to take it seriously.</p>
+          <p>So we did. We studied the case. We watched the light spill across the metal. We considered diamonds, secret documents and something that probably required a password. Water was not our first guess.</p>
+
+          <h3>The highly unnecessary reveal</h3>
+          <p>Then the lid opened.</p>
+          <p>Inside stood a single can of Liquid Death mountain water. No diamonds. No secret documents. Just a drink with an entrance that belonged in an action film.</p>
+          <p>Was the security necessary? Absolutely not. Did we bring the smoke anyway? Obviously.</p>
+          <blockquote>“THE CONTENTS WERE READY FOR A LUNCH BREAK.”</blockquote>
+          <p>That is the idea behind “All That Drama. Just Water.” We took the simplest reveal imaginable and gave it an unreasonable amount of suspense. The case looked important. The lighting looked expensive. The contents were ready for a lunch break.</p>
+          <p>The joke is in the gap between what you expect and what you get. You spend a moment imagining something extraordinary, then discover that the entire operation was protecting a can of water.</p>
+
+          <h3>Your statement</h3>
+          <p>Now we need your version of events. Before the case opened, what did you think was inside? And what is your most dramatic reaction to being thirsty?</p>
+          <p>Maybe you announce it to everyone in the room. Maybe the walk to the fridge becomes an expedition. Either way, you understand the campaign.</p>
+          <p>Explore the carousel below, follow the clues and decide whether you would have guessed correctly.</p>
+          <p>Case closed. Can open.</p>
+        </div>
+      </div>
+    </article>
+
+    <section class="carousel-section" aria-labelledby="evidence-title">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">VISUAL EVIDENCE / 05 FILES</p>
+          <h2 id="evidence-title">REVIEW THE EVIDENCE</h2>
+        </div>
+        <div class="gallery" aria-roledescription="carousel" aria-label="Campaign evidence gallery">
+          <div class="gallery__viewport">
+            <div class="gallery__track" id="gallery-track">
+              <figure class="slide is-active"><div class="image-fallback">EXPECTED FILE: assets/cr1.png</div><img src="assets/cr1.png" alt="Campaign slide 1" loading="lazy"></figure>
+              <figure class="slide"><div class="image-fallback">EXPECTED FILE: assets/cr2.png</div><img src="assets/cr2.png" alt="Campaign slide 2" loading="lazy"></figure>
+              <figure class="slide"><div class="image-fallback">EXPECTED FILE: assets/cr3.png</div><img src="assets/cr3.png" alt="Campaign slide 3" loading="lazy"></figure>
+              <figure class="slide"><div class="image-fallback">EXPECTED FILE: assets/cr4.png</div><img src="assets/cr4.png" alt="Campaign slide 4" loading="lazy"></figure>
+              <figure class="slide"><div class="image-fallback">EXPECTED FILE: assets/cr5.png</div><img src="assets/cr5.png" alt="Campaign slide 5" loading="lazy"></figure>
+            </div>
+          </div>
+          <div class="gallery__controls">
+            <button class="icon-button" id="previous-slide" type="button" aria-label="Previous evidence slide">←</button>
+            <p class="counter"><span id="slide-number">01</span> <span aria-hidden="true">/</span> 05</p>
+            <button class="icon-button" id="next-slide" type="button" aria-label="Next evidence slide">→</button>
+          </div>
+          <p class="sr-only" id="gallery-status" role="status">Evidence slide 1 of 5.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="shell footer__inner">
+      <p class="closing-line">CASE CLOSED.<br><span>CAN OPEN.</span></p>
+      <a class="button button--outline" href="#case">BACK TO THE CASE <span aria-hidden="true">↗</span></a>
+      <p class="footer-note">University project · Fictional campaign concept · Created by Ahmed Louhaishi</p>
+    </div>
+  </footer>
+</body>
+</html>
